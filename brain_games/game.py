@@ -17,6 +17,9 @@ def run_game_round(get_game_data):
 
 
 def run(question, get_game_data):
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
     print(question)
     current_try_number = 1
     while (current_try_number <= 3):
@@ -25,3 +28,4 @@ def run(question, get_game_data):
             current_try_number += 1
         else:
             return
+    print(f'Congratulations, {name}!')
