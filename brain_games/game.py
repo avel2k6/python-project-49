@@ -27,5 +27,6 @@ def run(question, get_game_data):
         if (is_success):
             current_try_number += 1
         else:
+            print(f'Let\'s try again, {name}!')
             return
     print(f'Congratulations, {name}!')
